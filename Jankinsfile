@@ -1,0 +1,24 @@
+pipeline {
+    agent any
+
+    stages {
+
+        stage('Build') {
+            steps {
+                echo 'Building MyFirstDevOps project'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                echo 'Testing MyFirstDevOps project'
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                echo 'Deployment completed'
+            }
+        }
+    }
+}
